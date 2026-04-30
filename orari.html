@@ -1,0 +1,409 @@
+<!-- =============================================
+   sections/orari.html
+   ORARI MËSIMOR — ndrysho lëndët dhe orët këtu
+   Shto tab të ri duke kopjuar strukturën
+   ============================================= -->
+
+<section id="orari">
+  <div class="section-label">Planifikimi</div>
+  <h2 class="section-title">Orari Mësimor</h2>
+  <p class="section-sub">Orari zyrtar për vitin akademik 2024–2025. Zgjidh klasën ose drejtimin.</p>
+
+  <!-- ── TABËT — shto <button> të ri për çdo klasë të re ── -->
+  <div class="orari-tabs" id="orariTabs">
+    <button class="orari-tab active" onclick="switchTab('klasa10a')">Klasa 10 A</button>
+    <button class="orari-tab"       onclick="switchTab('klasa10b')">Klasa 10 B</button>
+    <button class="orari-tab"       onclick="switchTab('klasa11a')">Klasa 11 A</button>
+    <button class="orari-tab"       onclick="switchTab('klasa11b')">Klasa 11 B</button>
+    <button class="orari-tab"       onclick="switchTab('klasa12a')">Klasa 12 A</button>
+    <button class="orari-tab"       onclick="switchTab('klasa12b')">Klasa 12 B</button>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       KLASA 10 A — Ndrysho lëndët këtu
+       Çdo <td> = një lëndë, e hënë deri e premte
+       ══════════════════════════════════════════ -->
+  <div class="orari-panel active" id="tab-klasa10a">
+    <div class="orari-table-wrap">
+      <table class="orari-table">
+        <thead>
+          <tr>
+            <th>Ora</th>
+            <th>E Hënë</th>
+            <th>E Martë</th>
+            <th>E Mërkurë</th>
+            <th>E Enjte</th>
+            <th>E Premte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Ora 1: 08:00–08:45 -->
+          <tr>
+            <td class="ora-nr">1</td>
+            <td>Matematikë</td>
+            <td>Gjuhë Shqipe</td>
+            <td>Fizikë</td>
+            <td>Matematikë</td>
+            <td>Histori</td>
+          </tr>
+          <!-- Pushimi i parë -->
+          <tr class="pushim"><td colspan="6">Pushim — 08:45 / 09:00</td></tr>
+          <!-- Ora 2: 09:00–09:45 -->
+          <tr>
+            <td class="ora-nr">2</td>
+            <td>Gjuhë Shqipe</td>
+            <td>Matematikë</td>
+            <td>Biologji</td>
+            <td>Gjeografi</td>
+            <td>Matematikë</td>
+          </tr>
+          <!-- Pushimi i dytë -->
+          <tr class="pushim"><td colspan="6">Pushim — 09:45 / 10:00</td></tr>
+          <!-- Ora 3: 10:00–10:45 -->
+          <tr>
+            <td class="ora-nr">3</td>
+            <td>Anglisht</td>
+            <td>Kimi</td>
+            <td>Gjuhë Shqipe</td>
+            <td>Anglisht</td>
+            <td>Ed. Fizike</td>
+          </tr>
+          <!-- Pushimi i madh -->
+          <tr class="pushim"><td colspan="6">Pushim i Madh — 10:45 / 11:05</td></tr>
+          <!-- Ora 4: 11:05–11:50 -->
+          <tr>
+            <td class="ora-nr">4</td>
+            <td>Kimi</td>
+            <td>Fizikë</td>
+            <td>Anglisht</td>
+            <td>Biologji</td>
+            <td>Gjuhë Shqipe</td>
+          </tr>
+          <!-- Pushimi i tretë -->
+          <tr class="pushim"><td colspan="6">Pushim — 11:50 / 12:05</td></tr>
+          <!-- Ora 5: 12:05–12:50 -->
+          <tr>
+            <td class="ora-nr">5</td>
+            <td>Histori</td>
+            <td>Ed. Fizike</td>
+            <td>Matematikë</td>
+            <td>Kimi</td>
+            <td>Fizikë</td>
+          </tr>
+          <!-- Pushimi i katërt -->
+          <tr class="pushim"><td colspan="6">Pushim — 12:50 / 13:05</td></tr>
+          <!-- Ora 6: 13:05–13:50 -->
+          <tr>
+            <td class="ora-nr">6</td>
+            <td>Gjeografi</td>
+            <td>Histori</td>
+            <td>Ed. Qytetare</td>
+            <td>Gjuhë Shqipe</td>
+            <td>Kimi</td>
+          </tr>
+          <!-- Pushimi i pestë -->
+          <tr class="pushim"><td colspan="6">Pushim — 13:50 / 14:05</td></tr>
+          <!-- Ora 7: 14:05–14:50 -->
+          <tr>
+            <td class="ora-nr">7</td>
+            <td>Informatikë</td>
+            <td>Gjeografi</td>
+            <td>Histori</td>
+            <td>Informatikë</td>
+            <td>Biologji</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Legjenda e ngjyrave (opsionale) -->
+    <div class="orari-legend">
+      <div class="orari-legend-item">
+        <div class="orari-legend-dot" style="background:#1a6b5a;"></div>
+        Shkencat Ekzakte
+      </div>
+      <div class="orari-legend-item">
+        <div class="orari-legend-dot" style="background:#c9a84c;"></div>
+        Gjuhët
+      </div>
+      <div class="orari-legend-item">
+        <div class="orari-legend-dot" style="background:#0d1b2a;"></div>
+        Shkencat Shoqërore
+      </div>
+      <div class="orari-legend-item">
+        <div class="orari-legend-dot" style="background:#6b7280;"></div>
+        Të tjera
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       KLASA 10 B — Ndrysho lëndët këtu
+       ══════════════════════════════════════════ -->
+  <div class="orari-panel" id="tab-klasa10b">
+    <div class="orari-table-wrap">
+      <table class="orari-table">
+        <thead>
+          <tr>
+            <th>Ora</th>
+            <th>E Hënë</th>
+            <th>E Martë</th>
+            <th>E Mërkurë</th>
+            <th>E Enjte</th>
+            <th>E Premte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ora-nr">1</td>
+            <td>Fizikë</td>
+            <td>Matematikë</td>
+            <td>Gjuhë Shqipe</td>
+            <td>Biologji</td>
+            <td>Matematikë</td>
+          </tr>
+          <tr class="pushim"><td colspan="6">Pushim — 08:45 / 09:00</td></tr>
+          <tr>
+            <td class="ora-nr">2</td>
+            <td>Matematikë</td>
+            <td>Anglisht</td>
+            <td>Matematikë</td>
+            <td>Gjuhë Shqipe</td>
+            <td>Histori</td>
+          </tr>
+          <tr class="pushim"><td colspan="6">Pushim — 09:45 / 10:00</td></tr>
+          <tr>
+            <td class="ora-nr">3</td>
+            <td>Gjuhë Shqipe</td>
+            <td>Biologji</td>
+            <td>Anglisht</td>
+            <td>Matematikë</td>
+            <td>Anglisht</td>
+          </tr>
+          <tr class="pushim"><td colspan="6">Pushim i Madh — 10:45 / 11:05</td></tr>
+          <tr>
+            <td class="ora-nr">4</td>
+            <td>Kimi</td>
+            <td>Histori</td>
+            <td>Kimi</td>
+            <td>Anglisht</td>
+            <td>Fizikë</td>
+          </tr>
+          <tr class="pushim"><td colspan="6">Pushim — 11:50 / 12:05</td></tr>
+          <tr>
+            <td class="ora-nr">5</td>
+            <td>Biologji</td>
+            <td>Fizikë</td>
+            <td>Gjeografi</td>
+            <td>Kimi</td>
+            <td>Gjuhë Shqipe</td>
+          </tr>
+          <tr class="pushim"><td colspan="6">Pushim — 12:50 / 13:05</td></tr>
+          <tr>
+            <td class="ora-nr">6</td>
+            <td>Histori</td>
+            <td>Kimi</td>
+            <td>Histori</td>
+            <td>Ed. Fizike</td>
+            <td>Gjeografi</td>
+          </tr>
+          <tr class="pushim"><td colspan="6">Pushim — 13:50 / 14:05</td></tr>
+          <tr>
+            <td class="ora-nr">7</td>
+            <td>Ed. Fizike</td>
+            <td>Gjeografi</td>
+            <td>Informatikë</td>
+            <td>Informatikë</td>
+            <td>Ed. Qytetare</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="orari-legend">
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#1a6b5a;"></div>Shkencat Ekzakte</div>
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#c9a84c;"></div>Gjuhët</div>
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#0d1b2a;"></div>Shkencat Shoqërore</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       KLASA 11 A
+       ══════════════════════════════════════════ -->
+  <div class="orari-panel" id="tab-klasa11a">
+    <div class="orari-table-wrap">
+      <table class="orari-table">
+        <thead>
+          <tr>
+            <th>Ora</th>
+            <th>E Hënë</th>
+            <th>E Martë</th>
+            <th>E Mërkurë</th>
+            <th>E Enjte</th>
+            <th>E Premte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="ora-nr">1</td><td>Matematikë</td><td>Fizikë</td><td>Kimi</td><td>Matematikë</td><td>Gjuhë Shqipe</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 08:45 / 09:00</td></tr>
+          <tr><td class="ora-nr">2</td><td>Gjuhë Shqipe</td><td>Matematikë</td><td>Matematikë</td><td>Fizikë</td><td>Anglisht</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 09:45 / 10:00</td></tr>
+          <tr><td class="ora-nr">3</td><td>Fizikë</td><td>Kimi</td><td>Biologji</td><td>Gjuhë Shqipe</td><td>Matematikë</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim i Madh — 10:45 / 11:05</td></tr>
+          <tr><td class="ora-nr">4</td><td>Kimi</td><td>Biologji</td><td>Gjuhë Shqipe</td><td>Anglisht</td><td>Fizikë</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 11:50 / 12:05</td></tr>
+          <tr><td class="ora-nr">5</td><td>Anglisht</td><td>Gjuhë Shqipe</td><td>Fizikë</td><td>Kimi</td><td>Biologji</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 12:50 / 13:05</td></tr>
+          <tr><td class="ora-nr">6</td><td>Histori</td><td>Anglisht</td><td>Histori</td><td>Ed. Fizike</td><td>Histori</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 13:50 / 14:05</td></tr>
+          <tr><td class="ora-nr">7</td><td>Informatikë</td><td>Histori</td><td>Anglisht</td><td>Informatikë</td><td>Ed. Fizike</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="orari-legend">
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#1a6b5a;"></div>Shkencat Ekzakte</div>
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#c9a84c;"></div>Gjuhët</div>
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#0d1b2a;"></div>Shkencat Shoqërore</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       KLASA 11 B
+       ══════════════════════════════════════════ -->
+  <div class="orari-panel" id="tab-klasa11b">
+    <div class="orari-table-wrap">
+      <table class="orari-table">
+        <thead>
+          <tr>
+            <th>Ora</th>
+            <th>E Hënë</th>
+            <th>E Martë</th>
+            <th>E Mërkurë</th>
+            <th>E Enjte</th>
+            <th>E Premte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="ora-nr">1</td><td>Kimi</td><td>Gjuhë Shqipe</td><td>Matematikë</td><td>Fizikë</td><td>Kimi</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 08:45 / 09:00</td></tr>
+          <tr><td class="ora-nr">2</td><td>Biologji</td><td>Kimi</td><td>Fizikë</td><td>Matematikë</td><td>Fizikë</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 09:45 / 10:00</td></tr>
+          <tr><td class="ora-nr">3</td><td>Matematikë</td><td>Fizikë</td><td>Gjuhë Shqipe</td><td>Kimi</td><td>Matematikë</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim i Madh — 10:45 / 11:05</td></tr>
+          <tr><td class="ora-nr">4</td><td>Gjuhë Shqipe</td><td>Matematikë</td><td>Anglisht</td><td>Gjuhë Shqipe</td><td>Anglisht</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 11:50 / 12:05</td></tr>
+          <tr><td class="ora-nr">5</td><td>Anglisht</td><td>Biologji</td><td>Kimi</td><td>Biologji</td><td>Gjuhë Shqipe</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 12:50 / 13:05</td></tr>
+          <tr><td class="ora-nr">6</td><td>Histori</td><td>Anglisht</td><td>Biologji</td><td>Anglisht</td><td>Ed. Fizike</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 13:50 / 14:05</td></tr>
+          <tr><td class="ora-nr">7</td><td>Ed. Fizike</td><td>Histori</td><td>Histori</td><td>Informatikë</td><td>Informatikë</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="orari-legend">
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#1a6b5a;"></div>Shkencat Ekzakte</div>
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#c9a84c;"></div>Gjuhët</div>
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#0d1b2a;"></div>Shkencat Shoqërore</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       KLASA 12 A
+       ══════════════════════════════════════════ -->
+  <div class="orari-panel" id="tab-klasa12a">
+    <div class="orari-table-wrap">
+      <table class="orari-table">
+        <thead>
+          <tr>
+            <th>Ora</th>
+            <th>E Hënë</th>
+            <th>E Martë</th>
+            <th>E Mërkurë</th>
+            <th>E Enjte</th>
+            <th>E Premte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="ora-nr">1</td><td>Matematikë</td><td>Gjuhë Shqipe</td><td>Matematikë</td><td>Kimi</td><td>Fizikë</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 08:45 / 09:00</td></tr>
+          <tr><td class="ora-nr">2</td><td>Fizikë</td><td>Matematikë</td><td>Gjuhë Shqipe</td><td>Matematikë</td><td>Matematikë</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 09:45 / 10:00</td></tr>
+          <tr><td class="ora-nr">3</td><td>Gjuhë Shqipe</td><td>Kimi</td><td>Fizikë</td><td>Gjuhë Shqipe</td><td>Gjuhë Shqipe</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim i Madh — 10:45 / 11:05</td></tr>
+          <tr><td class="ora-nr">4</td><td>Kimi</td><td>Fizikë</td><td>Kimi</td><td>Fizikë</td><td>Kimi</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 11:50 / 12:05</td></tr>
+          <tr><td class="ora-nr">5</td><td>Biologji</td><td>Biologji</td><td>Biologji</td><td>Anglisht</td><td>Anglisht</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 12:50 / 13:05</td></tr>
+          <tr><td class="ora-nr">6</td><td>Anglisht</td><td>Anglisht</td><td>Histori</td><td>Biologji</td><td>Filozofi</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 13:50 / 14:05</td></tr>
+          <tr><td class="ora-nr">7</td><td>Filozofi</td><td>Histori</td><td>Anglisht</td><td>Filozofi</td><td>Histori</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="orari-legend">
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#1a6b5a;"></div>Shkencat Ekzakte</div>
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#c9a84c;"></div>Gjuhët</div>
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#0d1b2a;"></div>Shkencat Shoqërore</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       KLASA 12 B
+       ══════════════════════════════════════════ -->
+  <div class="orari-panel" id="tab-klasa12b">
+    <div class="orari-table-wrap">
+      <table class="orari-table">
+        <thead>
+          <tr>
+            <th>Ora</th>
+            <th>E Hënë</th>
+            <th>E Martë</th>
+            <th>E Mërkurë</th>
+            <th>E Enjte</th>
+            <th>E Premte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="ora-nr">1</td><td>Gjuhë Shqipe</td><td>Matematikë</td><td>Anglisht</td><td>Gjuhë Shqipe</td><td>Matematikë</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 08:45 / 09:00</td></tr>
+          <tr><td class="ora-nr">2</td><td>Matematikë</td><td>Gjuhë Shqipe</td><td>Matematikë</td><td>Matematikë</td><td>Gjuhë Shqipe</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 09:45 / 10:00</td></tr>
+          <tr><td class="ora-nr">3</td><td>Anglisht</td><td>Anglisht</td><td>Gjuhë Shqipe</td><td>Anglisht</td><td>Anglisht</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim i Madh — 10:45 / 11:05</td></tr>
+          <tr><td class="ora-nr">4</td><td>Fizikë</td><td>Fizikë</td><td>Fizikë</td><td>Kimi</td><td>Fizikë</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 11:50 / 12:05</td></tr>
+          <tr><td class="ora-nr">5</td><td>Kimi</td><td>Kimi</td><td>Kimi</td><td>Fizikë</td><td>Biologji</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 12:50 / 13:05</td></tr>
+          <tr><td class="ora-nr">6</td><td>Histori</td><td>Biologji</td><td>Biologji</td><td>Biologji</td><td>Histori</td></tr>
+          <tr class="pushim"><td colspan="6">Pushim — 13:50 / 14:05</td></tr>
+          <tr><td class="ora-nr">7</td><td>Filozofi</td><td>Histori</td><td>Histori</td><td>Filozofi</td><td>Filozofi</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="orari-legend">
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#1a6b5a;"></div>Shkencat Ekzakte</div>
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#c9a84c;"></div>Gjuhët</div>
+      <div class="orari-legend-item"><div class="orari-legend-dot" style="background:#0d1b2a;"></div>Shkencat Shoqërore</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SHTO KLASË TË RE — kopjo bllokun më poshtë
+       dhe shto një <button> të ri tek .orari-tabs
+       ══════════════════════════════════════════
+  <div class="orari-panel" id="tab-EMRI_I_RI">
+    <div class="orari-table-wrap">
+      <table class="orari-table">
+        <thead>
+          <tr>
+            <th>Ora</th><th>E Hënë</th><th>E Martë</th>
+            <th>E Mërkurë</th><th>E Enjte</th><th>E Premte</th>
+          </tr>
+        </thead>
+        <tbody>
+          ... (kopjo rreshtat)
+        </tbody>
+      </table>
+    </div>
+  </div>
+  -->
+
+</section>
